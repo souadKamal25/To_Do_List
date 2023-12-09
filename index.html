@@ -3,11 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>To Do List </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>This is an update.</h1>
+    <div class="container">
+        <div class="to-do-text">
+            <span>To-Do List</span>
+            <i class="fas fa-list-check"></i>
+        </div>
+
+        <div class="form">
+            <input type="text" placeholder="Add your task" class="input">
+            <input type="submit" class="add" value="Add">
+        </div>
+
+        <div class="tasks">
+            <!-- <div class="task">
+                <div class="check">
+                    <i class="fas fa-check-circle unCheckedIcon"></i> 
+                    <span class="unCheckedSpan">Create JavaScript project</span>  
+                </div>
+                <span class="del">x</span>  
+            </div>                     -->
+        </div>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>

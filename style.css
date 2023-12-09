@@ -1,6 +1,81 @@
 body{
-    background-color: rgb(255, 182, 127);
+    background-image: linear-gradient(to bottom right, rgb(9, 9, 128), purple);
+    height: 100vh;
+    display: block;
+    margin: 8px;
+    font-family: Arial, Helvetica, sans-serif;
 }
-h1{
+.container{
+    background-color: #fff;
+    width: 500px;
+    padding: 20px;
+    margin: 100px auto;
+    display: block;
+    border-radius: 12px;
+}
+.to-do-text{
+    margin-bottom: 20px;
+}
+.to-do-text span{
+    color: rgb(15, 15, 139);
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.to-do-text i{
+    color: tomato;
+}
+.form{
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+}
+.form .add{
+    position: absolute;
+    right: 0px; 
+    width: 25%;
+    background-color: tomato;
+    padding: 20px;
+    color: #fff;
+    border-radius: 110px;
+    border: none;
+}
+.form .input{
+    width: 92%;
+    background-color: rgba(195, 190, 190, 0.599);
+    padding: 20px;
+    color: rgba(66, 64, 64, 0.599);
+    border-radius: 110px;
+    border: none;
+    outline: none;
+}
+.tasks{
+    display: block;
+}
+.tasks .task{
+    display: flex;
+    justify-content: space-between;
+}
+.tasks .task:not(:last-child) {
+    margin-bottom: 15px;
+}
+.tasks .task .check{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.tasks .task .check .checkedIcon{
+    color:tomato;
+}
+.tasks .task .check .unCheckedIcon{
+    color:#fff;
+    border: solid 3px rgba(195, 190, 190, 0.599);
+    border-radius: 150px;
+}        
+.tasks .task .check .checkedSpan{
+    text-decoration: line-through;
+    color: regb(81, 81 , 85);
+}
+.tasks .task .check .unCheckedSpan{
     color: black;
 }
